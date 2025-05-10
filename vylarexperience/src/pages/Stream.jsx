@@ -96,7 +96,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://soundcloud.com/<SOUNDCLOUD_ARTIST_ID>"
+          href="https://soundcloud.com/vylarofficial"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -111,7 +111,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://<BANDCAMP_ARTIST_ID>.bandcamp.com"
+          href="https://vylar.bandcamp.com"
           target="_blank"
           rel="noopener noreferrer"
         >
