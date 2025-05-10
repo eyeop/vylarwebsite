@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <header className="bg-transparent">
-      <div className="flex justify-center items-center text-4xl font-bold text-black pt-10 pb-1">
+      <div className="flex justify-center items-center text-4xl text-black pt-10 pb-1">
         <Link to="/">Vylar</Link>
       </div>
       <nav className="w-full">
@@ -25,12 +25,12 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link
+            {/* <Link
               to="/contact"
               className="hover:text-white hover:bg-gray-800 px-3 py-2 rounded"
             >
               Contact
-            </Link>
+            </Link> */}
           </li>
         </ul>
       </nav>

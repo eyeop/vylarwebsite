@@ -10,16 +10,11 @@ import Stream from "./pages/Stream";
 import Footer from "./components/Footer";
 
 import layingDownBgImage from "./img/IMG_5683.JPG";
-import darkBgImage from "./img/2024_IMG_5685.JPG";
 
 function App() {
-  const location = useLocation();
-
-  const isStreamPage = location.pathname === "/stream";
-  const isContactPage = location.pathname === "/contact";
   const backgroundStyle = {
-    backgroundImage: `url(${isContactPage ? darkBgImage : layingDownBgImage})`,
-    filter: isStreamPage ? "brightness(1.2)" : "brightness(1)",
+    backgroundImage: `url(${layingDownBgImage})`,
+    filter: "brightness(1)",
   };
 
   return (
@@ -32,7 +27,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/stream" element={<Stream />} />
         {/* <Route path="/tour" element={<div>Tour</div>} /> */}
-        <Route path="/contact" element={<div>Contact</div>} />
+        {/* <Route path="/contact" element={<div>Contact</div>} /> */}
       </Routes>
       <Footer />
     </div>
