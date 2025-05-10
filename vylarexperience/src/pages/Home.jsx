@@ -22,7 +22,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/INSTAGRAM_icon-icons.com_65535.png"
+            src="/src/img/icons/INSTAGRAM_icon-icons.com_65535.png"
             alt="Instagram"
             className="w-10 h-10 hover:scale-110 transition"
           />
@@ -33,7 +33,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/YOUTUBE_icon-icons.com_65537.png"
+            src="/src/img/icons/YOUTUBE_icon-icons.com_65537.png"
             alt="YouTube"
             className="w-10 h-10 hover:scale-110 transition"
           />
@@ -44,7 +44,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/tiktok_logo_icon_144802.png"
+            src="/src/img/icons/tiktok_logo_icon_144802.png"
             alt="TikTok"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
