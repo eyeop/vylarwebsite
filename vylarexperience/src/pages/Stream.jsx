@@ -21,7 +21,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://music.apple.com/artist/<APPLE_MUSIC_ARTIST_ID>"
+          href="https://music.apple.com/artist/vylar"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,7 +36,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://music.youtube.com/channel/<YOUTUBE_MUSIC_CHANNEL_ID>"
+          href="https://music.youtube.com/channel/@vylar"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -66,7 +66,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://www.deezer.com/artist/<DEEZER_ARTIST_ID>"
+          href="https://www.deezer.com/artist/vylar"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -81,7 +81,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://tidal.com/browse/artist/<TIDAL_ARTIST_ID>"
+          href="https://tidal.com/browse/artist/vylar"
           target="_blank"
           rel="noopener noreferrer"
         >
