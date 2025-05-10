@@ -11,7 +11,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/spotify_icon-icons.com_65552.png"
+            src="/src/img/icons/spotify_icon-icons.com_65552.png"
             alt="Spotify"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
@@ -26,7 +26,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/apple_music_logo_icon_145488.png"
+            src="/src/img/icons/apple_music_logo_icon_145488.png"
             alt="Apple Music"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
@@ -41,7 +41,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/youtube_music_icon_250073.png"
+            src="/src/img/icons/youtube_music_icon_250073.png"
             alt="YouTube Music"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
@@ -56,7 +56,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/Amazon_icon-icons.com_66787.png"
+            src="/src/img/icons/Amazon_icon-icons.com_66787.png"
             alt="Amazon Music"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
@@ -71,7 +71,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/brand_deezer_icon_158939.png"
+            src="/src/img/icons/brand_deezer_icon_158939.png"
             alt="Deezer"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
@@ -86,7 +86,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/tidal_logo_icon_144803.png"
+            src="/src/img/icons/tidal_logo_icon_144803.png"
             alt="Tidal"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
@@ -101,7 +101,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/soundcloud_icon-icons.com_65546.png"
+            src="/src/img/icons/soundcloud_icon-icons.com_65546.png"
             alt="SoundCloud"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
@@ -116,7 +116,7 @@ export default function Stream() {
           rel="noopener noreferrer"
         >
           <img
-            src="../src/img/icons/bandcamp_icon-icons.com_50945.png"
+            src="/src/img/icons/bandcamp_icon-icons.com_50945.png"
             alt="Bandcamp"
             className="w-10 h-10 hover:scale-110 transition"
             style={{
