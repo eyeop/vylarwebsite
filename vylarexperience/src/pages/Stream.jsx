@@ -21,7 +21,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://music.apple.com/artist/vylar"
+          href="https://music.apple.com/us/artist/vylar/1813564309"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,7 +36,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://music.youtube.com/channel/@vylar"
+          href="https://www.youtube.com/watch?v=zLWIahRPs2o&ab_channel=Vylar-Topic"
           target="_blank"
           rel="noopener noreferrer"
         >
