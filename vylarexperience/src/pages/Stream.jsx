@@ -51,7 +51,7 @@ export default function Stream() {
           />
         </a>
         <a
-          href="https://music.amazon.com/artists/B0C1TD5CKB/vylar"
+          href="https://music.amazon.com/artists/B0FBMLZFKJ/vylar"
           target="_blank"
           rel="noopener noreferrer"
         >

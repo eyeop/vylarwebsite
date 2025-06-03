@@ -43,7 +43,7 @@ export default function Home() {
           />
         </a>
         <a
-          href="https://tiktok.com/@vylarexperience"
+          href="https://tiktok.com/@vylar3"
           target="_blank"
           rel="noopener noreferrer"
         >
