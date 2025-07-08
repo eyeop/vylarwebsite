@@ -3,7 +3,7 @@ export default function Home() {
     <>
       <div className="flex flex-col items-center min-h-screen px-4">
         {/* <h1 className="text-2xl text-center text-white pt-3 pb-6">On a Race</h1> */}
-        <div className="w-full max-w-sm pt-8">
+        <div className="w-full max-w-xs pt-8">
           <iframe
             className="rounded-lg w-full h-[352px]"
             src="https://open.spotify.com/embed/track/409t1DwzMqrBxP54uzAGK1?utm_source=generator&theme=0"
@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex flex-col items-center min-h-screen text-black py-3">
         {/* <h1 className="text-2xl mb-4">Discover Vylar</h1> */}
       </div>
-      <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-6 pr-4">
+      <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 pr-4">
         <a
           href="https://instagram.com/vylarexperience"
           target="_blank"
@@ -43,7 +43,7 @@ export default function Home() {
           />
         </a>
         <a
-          href="https://tiktok.com/@vylar3"
+          href="https://tiktok.com/@vylarexperience"
           target="_blank"
           rel="noopener noreferrer"
         >

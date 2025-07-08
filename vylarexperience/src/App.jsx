@@ -7,6 +7,7 @@ import {
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Stream from "./pages/Stream";
+import Demos from "./pages/Demos";
 import Footer from "./components/Footer";
 
 import layingDownBgImage from "./img/IMG_5683.JPG";
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stream" element={<Stream />} />
+        <Route path="/demos" element={<Demos />} />
         {/* <Route path="/tour" element={<div>Tour</div>} /> */}
         {/* <Route path="/contact" element={<div>Contact</div>} /> */}
       </Routes>
