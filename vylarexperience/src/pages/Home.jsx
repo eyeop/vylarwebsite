@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center min-h-screen px-4">
+      <div className="flex flex-col items-center px-4">
         {/* <h1 className="text-2xl text-center text-white pt-3 pb-6">On a Race</h1> */}
         <div className="w-full max-w-xs pt-8">
           <iframe
@@ -12,7 +12,7 @@ export default function Home() {
           ></iframe>
         </div>
       </div>
-      <div className="flex flex-col items-center min-h-screen text-black py-3">
+      <div className="flex flex-col items-center text-black py-3">
         {/* <h1 className="text-2xl mb-4">Discover Vylar</h1> */}
       </div>
       <div className="fixed right-0 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4 pr-4">
