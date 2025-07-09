@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat fixed inset-0 -z-10"
+        className="bg-black bg-cover bg-center bg-no-repeat fixed inset-0 -z-10"
         style={backgroundStyle}
       />
       <div className="relative min-h-screen max-h-screen overflow-auto">
