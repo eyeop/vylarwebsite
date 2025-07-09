@@ -1,6 +1,6 @@
 export default function Stream() {
   return (
-    <div className="flex flex-col items-center min-h-screen text-black py-3 m-0 md:mt-10 md:ml-25 -rotate-1 md:-rotate-6">
+    <div className="flex flex-col items-center text-black py-3 m-0 md:mt-10 md:ml-25 -rotate-1 md:-rotate-6">
       {/* <h1 className="text-2xl mb-4">Discover Vylar</h1> */}
 
       {/* Social Media Links */}

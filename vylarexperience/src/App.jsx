@@ -19,20 +19,23 @@ function App() {
   };
 
   return (
-    <div
-      className="bg-cover bg-center bg-no-repeat fixed inset-0 -z-10"
-      style={backgroundStyle}
-    >
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/stream" element={<Stream />} />
-        <Route path="/demos" element={<Demos />} />
-        {/* <Route path="/tour" element={<div>Tour</div>} /> */}
-        {/* <Route path="/contact" element={<div>Contact</div>} /> */}
-      </Routes>
-      <Footer />
-    </div>
+    <>
+      <div
+        className="bg-cover bg-center bg-no-repeat fixed inset-0 -z-10"
+        style={backgroundStyle}
+      />
+      <div className="relative min-h-screen max-h-screen overflow-auto">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/stream" element={<Stream />} />
+          <Route path="/demos" element={<Demos />} />
+          {/* <Route path="/tour" element={<div>Tour</div>} /> */}
+          {/* <Route path="/contact" element={<div>Contact</div>} /> */}
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 }
 
