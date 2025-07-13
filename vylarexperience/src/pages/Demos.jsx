@@ -2,14 +2,9 @@ import React from "react";
 import demo1 from "../audio/2025_06_07Feelings_Progress.wav";
 import demo2 from "../audio/2025_06_30_BOMH_75bpm_Amaj.mp3";
 import demo3 from "../audio/2025_07_13_WildestDemo.mp3";
-// ...add more imports as needed...
-
-const demoTracks = [
-  { title: "Demo 1", url: demo1 },
-  { title: "Demo 2", url: demo2 },
-  { title: "Demo 3", url: demo3 },
-  // ...add more demos as needed...
-];
+import comforzoneDemo from "../audio/2025_05_25_ComfortZone2.wav";
+import forgetDemo from "../audio/2025_03_17_Forget_Demo.mp3";
+import friendGirlDemo from "../audio/2025_01_19_FriendGirlDemo.mp3";
 
 export default function Demos() {
   return (
@@ -21,8 +16,14 @@ export default function Demos() {
         </audio>
       </div>
       <div className="mb-8 bg-white/80 rounded-lg shadow p-4">
-        <h2 className="text-xl font-semibold mb-2">Feelings</h2>
-        <audio src={demo1} controls className="w-full mt-2 rounded">
+        <h2 className="text-xl font-semibold mb-2">Comfort Zone</h2>
+        <audio src={comforzoneDemo} controls className="w-full mt-2 rounded">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div className="mb-8 bg-white/80 rounded-lg shadow p-4">
+        <h2 className="text-xl font-semibold mb-2">Forget</h2>
+        <audio src={forgetDemo} controls className="w-full mt-2 rounded">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -32,8 +33,18 @@ export default function Demos() {
           Your browser does not support the audio element.
         </audio>
       </div>
-
-      {/* ...add more demos as needed... */}
+      <div className="mb-8 bg-white/80 rounded-lg shadow p-4">
+        <h2 className="text-xl font-semibold mb-2">Friend Girl</h2>
+        <audio src={friendGirlDemo} controls className="w-full mt-2 rounded">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      {/* <div className="mb-8 bg-white/80 rounded-lg shadow p-4">
+        <h2 className="text-xl font-semibold mb-2">Feelings</h2>
+        <audio src={demo1} controls className="w-full mt-2 rounded">
+          Your browser does not support the audio element.
+        </audio>
+      </div> */}
     </div>
   );
 }
