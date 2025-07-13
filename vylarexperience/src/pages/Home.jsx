@@ -24,7 +24,7 @@ export default function Home() {
           <img
             src="https://images.icon-icons.com/792/PNG/512/INSTAGRAM_icon-icons.com_65535.png"
             alt="Instagram"
-            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 transition"
+            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 active:scale-80 transition"
             style={{
               filter:
                 "brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(87%) contrast(87%)",
@@ -39,7 +39,7 @@ export default function Home() {
           <img
             src="https://images.icon-icons.com/836/PNG/512/Youtube_icon-icons.com_66802.png"
             alt="YouTube"
-            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 transition"
+            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 active:scale-80 transition"
             style={{
               filter:
                 "brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(87%) contrast(87%)",
@@ -54,7 +54,7 @@ export default function Home() {
           <img
             src="https://images.icon-icons.com/2389/PNG/512/tiktok_logo_icon_144802.png"
             alt="TikTok"
-            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 transition"
+            className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 active:scale-80 transition"
             style={{
               filter:
                 "brightness(0) saturate(100%) invert(67%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(87%) contrast(87%)",
