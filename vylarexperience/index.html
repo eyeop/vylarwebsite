@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Vylar - Experience the best music and streams." />
-    <meta name="keywords" content="Vylar, music, streaming, demos" />
-    <meta name="author" content="Vylar" />
-    <title>Vylar</title>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "YOUR_ANALYTICS_ID");
-    </script>
-
     <!-- Google Tag Manager -->
     <script>
       (function(w, d, s, l, i) {
@@ -37,16 +19,34 @@
     </script>
     <!-- End Google Tag Manager -->
 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vylar - Experience the best music and streams." />
+    <meta name="keywords" content="Vylar, music, streaming, demos" />
+    <meta name="author" content="Vylar" />
+    <title>Vylar</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_ANALYTICS_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "YOUR_ANALYTICS_ID");
+    </script>
+
+    <!-- Tailwind CSS -->
+    <link href="/dist/output.css" rel="stylesheet">
+  </head>
+  <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKR8J57D" height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <!-- Tailwind CSS -->
-    <link href="/dist/output.css" rel="stylesheet">
-  </head>
-  <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
