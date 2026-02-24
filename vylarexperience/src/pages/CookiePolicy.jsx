@@ -24,7 +24,7 @@ export default function CookiePolicy() {
         You can manage your cookie preferences through your browser settings. Most browsers allow you to refuse or accept cookies, as well as delete cookies that have already been set.
       </p>
       <p>
-        For more information about our use of cookies, please contact us at <a href="mailto:support@vylar.com" className="underline">support@vylar.com</a>.
+        For more information about our use of cookies, please contact us at <a href="mailto:vylarbusiness@gmail.com" className="underline">vylarbusiness@gmail.com</a>.
       </p>
       <button
         onClick={handleClose}
