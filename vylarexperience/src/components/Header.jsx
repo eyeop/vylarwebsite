@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className="bg-transparent">
       <div className="flex justify-center items-center text-4xl text-black pt-10 pb-1 font-semibold">
-        <Link to="/">Vylar</Link>
+        <Link to="/" aria-label="Go to Home">Vylar</Link>
       </div>
       <nav className="w-full">
         <ul className="flex justify-center space-x-4 py-4 text-black">
@@ -20,6 +20,7 @@ export default function Header() {
             <li key={item.to}>
               <Link
                 to={item.to}
+                aria-label={`Go to ${item.label}`}
                 className={`px-4 py-2 rounded-md transition-all duration-200 ease-in-out
                   ${
                     location.pathname === item.to
