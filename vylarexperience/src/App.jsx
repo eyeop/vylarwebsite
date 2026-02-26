@@ -67,7 +67,7 @@ function App() {
             </Routes>
           </Suspense>
         </ErrorBoundary>
-        <Footer />
+        {location.pathname !== "/cookie-policy" && <Footer />}
         {location.pathname !== "/cookie-policy" && <CookieConsent />}
       </div>
     </>
