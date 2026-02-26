@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CookieConsent from "./components/CookieConsent";
 import React from "react";
+import { useLocation } from "react-router-dom";
 import layingDownBgImage from "./img/IMG_5683.JPG";
 import CookiePolicy from "./pages/CookiePolicy";
 
@@ -39,6 +40,8 @@ class ErrorBoundary extends React.Component {
 }
 
 function App() {
+  const location = useLocation();
+
   const backgroundStyle = {
     backgroundImage: `url(${layingDownBgImage})`,
     filter: "brightness(1)",
@@ -65,7 +68,7 @@ function App() {
           </Suspense>
         </ErrorBoundary>
         <Footer />
-        <CookieConsent />
+        {location.pathname !== "/cookie-policy" && <CookieConsent />}
       </div>
     </>
   );

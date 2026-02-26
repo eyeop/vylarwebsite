@@ -8,8 +8,8 @@ export default function CookiePolicy() {
   };
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-90 text-white p-8 flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold mb-4">Cookie Policy</h1>
+    <div className="min-h-screen bg-black bg-opacity-90 text-white px-4 py-6 md:px-8 md:py-10 flex flex-col items-center">
+      <h1 className="text-3xl font-bold mb-4 text-center">Cookie Policy</h1>
       <p className="mb-4">
         This website uses cookies to enhance your experience. Cookies are small text files that are stored on your device to help us improve our services and provide a better user experience.
       </p>
