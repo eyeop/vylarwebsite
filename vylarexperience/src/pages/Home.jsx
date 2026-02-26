@@ -5,7 +5,7 @@ export default function Home() {
         {/* <h1 className="text-2xl text-center text-white pt-3 pb-6">On a Race</h1> */}
         <div className="w-full max-w-xs pt-8">
           <iframe
-            className="rounded-lg w-full h-[352px]"
+            className="rounded-lg w-full h-[200px] sm:h-[352px]"
             src="https://open.spotify.com/embed/track/409t1DwzMqrBxP54uzAGK1?utm_source=generator&theme=0"
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
