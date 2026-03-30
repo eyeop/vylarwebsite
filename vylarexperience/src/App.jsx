@@ -14,6 +14,7 @@ import CookiePolicy from "./pages/CookiePolicy";
 
 const Home = lazy(() => import("./pages/Home"));
 const Stream = lazy(() => import("./pages/Stream"));
+const Shows = lazy(() => import("./pages/Shows"));
 const Demos = lazy(() => import("./pages/Demos"));
 
 class ErrorBoundary extends React.Component {
@@ -50,18 +51,19 @@ function App() {
   return (
     <>
       <div
-        className="bg-black bg-cover bg-center bg-no-repeat fixed inset-0 -z-10 w-screen"
+        className="pointer-events-none fixed inset-0 z-0 bg-black bg-cover bg-center bg-no-repeat"
         style={backgroundStyle}
         role="img"
         aria-label="Background image of laying down"
       />
-      <div className="relative min-h-screen max-h-screen overflow-auto">
+      <div className="relative z-10 min-h-screen max-h-screen overflow-auto">
         <Header />
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/stream" element={<Stream />} />
+              <Route path="/shows" element={<Shows />} />
               <Route path="/demos" element={<Demos />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
             </Routes>
