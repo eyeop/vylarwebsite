@@ -1,17 +1,11 @@
 import { useRef, useState } from "react";
-import demo2 from "../audio/2025_06_30_BOMH_75bpm_Amaj.mp3";
 import demo3 from "../audio/2025_07_13_WildestDemo.mp3";
 import comforzoneDemo from "../audio/2025_05_25_ComfortZone2.wav";
-import forgetDemo from "../audio/2025_03_17_Forget_Demo.mp3";
-import friendGirlDemo from "../audio/2025_01_19_FriendGirlDemo.mp3";
 import "../index.css";
 
 const demos = [
   { title: "Wildest", src: demo3 },
   { title: "Comfort Zone", src: comforzoneDemo },
-  { title: "Forget", src: forgetDemo },
-  { title: "A Bit Of My", src: demo2 },
-  { title: "Friend Girl", src: friendGirlDemo },
 ];
 
 function formatTime(time) {
