@@ -82,7 +82,7 @@ export default function Demos() {
 
   return (
     <div className="flex flex-col items-center px-4 pt-6 pb-16 text-black">
-      <div className="w-full max-w-3xl rounded-3xl bg-black/60 px-6 py-8 text-center text-gray-100 shadow-xl backdrop-blur-sm">
+      <div className="w-full max-w-[44rem] rounded-3xl bg-black/60 px-6 py-8 text-center text-gray-100 shadow-xl backdrop-blur-sm">
         <p className="text-sm uppercase tracking-[0.35em] text-gray-300">Studio</p>
         <h1 className="mt-3 text-4xl font-semibold">Demo Tracks</h1>
         <p className="mt-4 text-base text-gray-200 sm:text-lg">
@@ -90,7 +90,7 @@ export default function Demos() {
         </p>
       </div>
 
-      <div className="mt-8 flex w-full max-w-3xl flex-col gap-3">
+      <div className="mt-8 flex w-full max-w-[44rem] flex-col gap-3">
         {demos.map((demo, index) => {
           const track = playerState[index];
           const progressPercent = track.duration
@@ -199,7 +199,7 @@ export default function Demos() {
         })}
       </div>
 
-      <div className="mt-8 w-full max-w-3xl rounded-2xl bg-white/70 px-6 py-6 shadow-lg backdrop-blur-sm">
+      <div className="mt-8 w-full max-w-[44rem] rounded-2xl bg-white/70 px-6 py-6 shadow-lg backdrop-blur-sm">
         <p className="text-sm uppercase tracking-[0.2em] text-gray-600">Reference Songs</p>
         <h2 className="mt-2 text-2xl font-semibold">Playlist</h2>
         <p className="mt-2 text-base text-gray-700">
