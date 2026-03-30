@@ -9,7 +9,7 @@ export default function Shows() {
 
   return (
     <div className="flex flex-col items-center px-4 pt-6 pb-16 text-black">
-      <div className="w-full max-w-3xl rounded-3xl bg-black/60 px-6 py-8 text-center text-gray-100 shadow-xl backdrop-blur-sm">
+      <div className="w-full max-w-[44rem] rounded-3xl bg-black/60 px-6 py-8 text-center text-gray-100 shadow-xl backdrop-blur-sm">
         <p className="text-sm uppercase tracking-[0.35em] text-gray-300">Live</p>
         <h1 className="mt-3 text-4xl font-semibold">Shows</h1>
         <p className="mt-4 text-base text-gray-200 sm:text-lg">
@@ -25,7 +25,7 @@ export default function Shows() {
         </a>
       </div>
 
-      <div className="mt-8 grid w-full max-w-3xl gap-4">
+      <div className="mt-8 grid w-full max-w-[44rem] gap-4">
         {upcomingShows.map((show) => (
           <article
             key={show.date}
