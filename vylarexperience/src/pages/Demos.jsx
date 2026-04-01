@@ -198,28 +198,6 @@ export default function Demos() {
           );
         })}
       </div>
-
-      <div className="mt-8 w-full max-w-[44rem] rounded-2xl bg-white/70 px-6 py-6 shadow-lg backdrop-blur-sm">
-        <p className="text-sm uppercase tracking-[0.2em] text-gray-600">Reference Songs</p>
-        <h2 className="mt-2 text-2xl font-semibold">Playlist</h2>
-        <p className="mt-2 text-base text-gray-700">
-          A few tracks that help shape the mood and direction of these demos.
-        </p>
-        <div className="mt-5 flex justify-center">
-          <iframe
-            data-testid="embed-iframe"
-            style={{ borderRadius: "12px" }}
-            src="https://open.spotify.com/embed/playlist/2icjo7ICbV3pt90CzG20PV?utm_source=generator"
-            width="100%"
-            height="380"
-            frameBorder="0"
-            allowFullScreen
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            className="rounded-xl shadow-lg"
-          ></iframe>
-        </div>
-      </div>
     </div>
   );
 }
