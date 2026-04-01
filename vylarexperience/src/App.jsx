@@ -56,7 +56,7 @@ function App() {
         role="img"
         aria-label="Background image of laying down"
       />
-      <div className="relative z-10 min-h-screen max-h-screen overflow-auto">
+      <div className="relative z-10 min-h-screen max-h-screen overflow-auto pb-12">
         <Header />
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
