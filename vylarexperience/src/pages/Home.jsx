@@ -6,7 +6,22 @@ export default function Home() {
         <div className="w-full max-w-[17.5rem] pt-8 sm:max-w-xs">
           <iframe
             className="rounded-lg w-full h-[200px] sm:h-[352px]"
+            title="Vylar featured track"
             src="https://open.spotify.com/embed/track/409t1DwzMqrBxP54uzAGK1?utm_source=generator&theme=0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div className="w-full max-w-[17.5rem] pt-4 sm:max-w-md">
+          <iframe
+            data-testid="embed-iframe"
+            style={{ borderRadius: "12px" }}
+            title="Vylar live playlist"
+            src="https://open.spotify.com/embed/playlist/3MMdNjsZvmpE7BdVGsJYhi?utm_source=generator"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allowFullScreen
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"
           ></iframe>
