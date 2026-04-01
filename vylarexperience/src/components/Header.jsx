@@ -7,7 +7,6 @@ export default function Header() {
     { label: "Home", to: "/" },
     { label: "Stream", to: "/stream" },
     { label: "Shows", to: "/shows" },
-    { label: "Demos", to: "/demos" },
     // { label: "Contact", to: "/contact" },
   ];
 

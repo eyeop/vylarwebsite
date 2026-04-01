@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  Navigate,
 } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Header from "./components/Header";
@@ -15,7 +16,6 @@ import CookiePolicy from "./pages/CookiePolicy";
 const Home = lazy(() => import("./pages/Home"));
 const Stream = lazy(() => import("./pages/Stream"));
 const Shows = lazy(() => import("./pages/Shows"));
-const Demos = lazy(() => import("./pages/Demos"));
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -64,7 +64,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/stream" element={<Stream />} />
               <Route path="/shows" element={<Shows />} />
-              <Route path="/demos" element={<Demos />} />
+              <Route path="/demos" element={<Navigate to="/" replace />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
             </Routes>
           </Suspense>
