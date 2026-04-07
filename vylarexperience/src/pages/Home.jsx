@@ -12,20 +12,6 @@ export default function Home() {
             loading="lazy"
           ></iframe>
         </div>
-        <div className="w-full max-w-[17.5rem] pt-4 sm:max-w-md">
-          <iframe
-            data-testid="embed-iframe"
-            style={{ borderRadius: "12px" }}
-            title="Vylar live playlist"
-            src="https://open.spotify.com/embed/playlist/3MMdNjsZvmpE7BdVGsJYhi?utm_source=generator"
-            width="100%"
-            height="352"
-            frameBorder="0"
-            allowFullScreen
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-          ></iframe>
-        </div>
       </div>
       <div className="flex flex-col items-center text-black py-3">
         {/* <h1 className="text-2xl mb-4">Discover Vylar</h1> */}
