@@ -45,14 +45,8 @@ function App() {
   const location = useLocation();
   const hostname =
     typeof window !== "undefined" ? window.location.hostname : "";
-  const isProfileHost = hostname === "profile.vylarexperience.com";
   const isEngineerHost = hostname === "engineer.vylarexperience.com";
-  const isProfileExperienceHost = hostname === "engineering.vylarexperience.com";
-  const isAcademicShell =
-    location.pathname === "/profile" ||
-    isProfileHost ||
-    isEngineerHost ||
-    isProfileExperienceHost;
+  const isAcademicShell = location.pathname === "/engineer" || isEngineerHost;
 
   const backgroundStyle = {
     backgroundImage: `url(${layingDownBgImage})`,
@@ -77,7 +71,7 @@ function App() {
               <Route path="/" element={isAcademicShell ? <Profile /> : <Home />} />
               <Route path="/stream" element={<Stream />} />
               <Route path="/shows" element={<Shows />} />
-              <Route path="/profile" element={<Profile />} />
+              <Route path="/engineer" element={<Profile />} />
               <Route path="/demos" element={<Navigate to="/" replace />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
             </Routes>
