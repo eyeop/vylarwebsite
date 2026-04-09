@@ -12,6 +12,7 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import layingDownBgImage from "./img/IMG_5683.JPG";
 import CookiePolicy from "./pages/CookiePolicy";
+const Profile = lazy(() => import("./pages/Profile"));
 
 const Home = lazy(() => import("./pages/Home"));
 const Stream = lazy(() => import("./pages/Stream"));
@@ -23,7 +24,7 @@ class ErrorBoundary extends React.Component {
     this.state = { hasError: false };
   }
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError() {
     return { hasError: true };
   }
 
@@ -42,6 +43,10 @@ class ErrorBoundary extends React.Component {
 
 function App() {
   const location = useLocation();
+  const hostname =
+    typeof window !== "undefined" ? window.location.hostname : "";
+  const isEngineerHost = hostname === "engineer.vylarexperience.com";
+  const isAcademicShell = location.pathname === "/engineer" || isEngineerHost;
 
   const backgroundStyle = {
     backgroundImage: `url(${layingDownBgImage})`,
@@ -50,27 +55,32 @@ function App() {
 
   return (
     <>
-      <div
-        className="pointer-events-none fixed inset-0 z-0 bg-black bg-cover bg-center bg-no-repeat"
-        style={backgroundStyle}
-        role="img"
-        aria-label="Background image of laying down"
-      />
+      {!isAcademicShell && (
+        <div
+          className="pointer-events-none fixed inset-0 z-0 bg-black bg-cover bg-center bg-no-repeat"
+          style={backgroundStyle}
+          role="img"
+          aria-label="Background image of laying down"
+        />
+      )}
       <div className="relative z-10 min-h-screen max-h-screen overflow-auto pb-12">
-        <Header />
+        {!isAcademicShell && <Header />}
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={isAcademicShell ? <Profile /> : <Home />} />
               <Route path="/stream" element={<Stream />} />
               <Route path="/shows" element={<Shows />} />
+              <Route path="/engineer" element={<Profile />} />
               <Route path="/demos" element={<Navigate to="/" replace />} />
               <Route path="/cookie-policy" element={<CookiePolicy />} />
             </Routes>
           </Suspense>
         </ErrorBoundary>
-        {location.pathname !== "/cookie-policy" && <Footer />}
-        {location.pathname !== "/cookie-policy" && <CookieConsent />}
+        {location.pathname !== "/cookie-policy" && !isAcademicShell && <Footer />}
+        {location.pathname !== "/cookie-policy" && !isAcademicShell && (
+          <CookieConsent />
+        )}
       </div>
     </>
   );
