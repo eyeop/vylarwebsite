@@ -64,15 +64,6 @@ export default function Profile() {
         <header className="mb-12 border-b border-slate-900/12 pb-8">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
-              <p
-                className="mb-4 text-xs font-semibold uppercase tracking-[0.32em] text-slate-700"
-                style={{
-                  fontFamily:
-                    '"SFMono-Regular", "SF Mono", "Cascadia Code", "JetBrains Mono", monospace',
-                }}
-              >
-                Academic profile / ICML 2026
-              </p>
               <h1
                 className="max-w-3xl text-4xl leading-tight font-semibold sm:text-5xl"
                 style={{
